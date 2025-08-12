@@ -6,6 +6,8 @@ import home from './assets/home.svg';
 import saved from './assets/bookmark.svg';
 import rocket from './assets/rocket.svg';
 import sendBtn from './assets/send.svg';
+import userIcon from './assets/man.png';
+import gptImgLogo from './assets/chatgptLogo.svg';
 
 function App() {
   return (
@@ -31,11 +33,19 @@ function App() {
       {/* main section  */}
 
       <div className="main">
-        <div className="chats"></div>
+        <div className="chats">
+          <div className="chat">
+            <img className='chatImg' src={userIcon} alt="" /><p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad dolores molestias consequatur placeat? Nobis provident eveniet deserunt. Culpa, quam!</p>
+          </div>
+          <div className="chat bot">
+            <img className='chatImg' src={gptImgLogo} alt="" /><p className="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nihil, maxime neque, sequi minima necessitatibus at optio perspiciatis dolor impedit alias suscipit eaque harum voluptate consequuntur quo natus doloribus. Cupiditate quasi omnis blanditiis, earum, neque eveniet hic deserunt minus ipsum expedita soluta commodi voluptatum repellat eligendi. Id harum veniam beatae dolorem? Tenetur consectetur nesciunt cum unde, alias adipisci saepe velit incidunt beatae vero inventore dignissimos nulla mollitia culpa praesentium ab exercitationem molestias laboriosam dolore repellat voluptas a atque cumque dolorem! Reiciendis delectus tenetur repellendus nam accusamus ipsam quos sit architecto iste, a possimus consequatur qui dolorem fugiat eligendi atque labore?</p>
+          </div>
+        </div>
         <div className="chatFooter">
           <div className="inp">
-            <input type="text" /><button className="send"><img src={sendBtn} alt="" /></button>
+            <input type="text" placeholder='Send a message'/><button className="send"><img src={sendBtn} alt="Send" /></button>
           </div>
+          <p>ChatBot may produce inaccurate information about people, places, or facts. ChatBot August 20 Version.</p>
         </div>
       </div>
 
